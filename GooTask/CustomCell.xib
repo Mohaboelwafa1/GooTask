@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="91" id="sBx-Q7-t59" customClass="CustomCell" customModule="GooTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sBx-Q7-t59" id="LyL-ye-WlR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crE-fZ-wcE">
+                        <rect key="frame" x="277" y="8" width="90" height="73"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="خديجة علي محمد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qo5-cN-34m">
+                        <rect key="frame" x="129" y="8" width="140" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="GA9-bR-e2R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جليسة أطفال" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-7i-exo">
+                        <rect key="frame" x="81" y="52" width="75" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="PRb-ZX-Luq"/>
+                            <constraint firstAttribute="height" constant="35" id="cjb-ND-cRB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbc-Ed-h68" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="8" y="65" width="65" height="9"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="٢٠ ريال في الساعة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfo-LM-cUd">
+                        <rect key="frame" x="194" y="52" width="75" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qo5-cN-34m" firstAttribute="top" secondItem="LyL-ye-WlR" secondAttribute="topMargin" id="3RS-37-CA5"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="firstBaseline" secondItem="Qfo-LM-cUd" secondAttribute="firstBaseline" id="9xJ-yv-G1o"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="leading" secondItem="LyL-ye-WlR" secondAttribute="leading" constant="81" id="HCL-44-n9I"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="centerY" secondItem="Fbc-Ed-h68" secondAttribute="centerY" id="OXf-r3-WD6"/>
+                    <constraint firstItem="crE-fZ-wcE" firstAttribute="leading" secondItem="qo5-cN-34m" secondAttribute="trailing" constant="8" symbolic="YES" id="PtR-el-as3"/>
+                    <constraint firstItem="crE-fZ-wcE" firstAttribute="centerY" secondItem="LyL-ye-WlR" secondAttribute="centerY" id="Swo-gZ-EZw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hTM-7i-exo" secondAttribute="bottom" constant="-5.5" id="UTe-vG-bxP"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="top" secondItem="qo5-cN-34m" secondAttribute="bottom" constant="9" id="Xjr-h9-BEK"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="baseline" secondItem="Qfo-LM-cUd" secondAttribute="baseline" id="Zb6-ap-Kls"/>
+                    <constraint firstItem="qo5-cN-34m" firstAttribute="leading" secondItem="LyL-ye-WlR" secondAttribute="leading" constant="129" id="i3w-CV-SHm"/>
+                    <constraint firstItem="qo5-cN-34m" firstAttribute="top" secondItem="crE-fZ-wcE" secondAttribute="top" id="ntz-gz-k57"/>
+                    <constraint firstItem="hTM-7i-exo" firstAttribute="leading" secondItem="Fbc-Ed-h68" secondAttribute="trailing" constant="8" symbolic="YES" id="u3C-4F-Kp2"/>
+                    <constraint firstItem="crE-fZ-wcE" firstAttribute="trailing" secondItem="LyL-ye-WlR" secondAttribute="trailingMargin" id="xO9-m5-Bh1"/>
+                    <constraint firstItem="Qfo-LM-cUd" firstAttribute="leading" secondItem="hTM-7i-exo" secondAttribute="trailing" constant="38" id="z5O-h9-MAk"/>
+                    <constraint firstItem="qo5-cN-34m" firstAttribute="trailing" secondItem="Qfo-LM-cUd" secondAttribute="trailing" id="zHr-Sy-aZE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="crE-fZ-wcE" id="o02-w5-USr"/>
+                <outlet property="jobTitleLabel" destination="hTM-7i-exo" id="F2Y-Si-mRm"/>
+                <outlet property="nameLabel" destination="qo5-cN-34m" id="qeG-2R-uWT"/>
+                <outlet property="profileImage" destination="crE-fZ-wcE" id="bK5-j2-jm7"/>
+                <outlet property="ratePerHoyrLabel" destination="Qfo-LM-cUd" id="aaB-HB-pX3"/>
+            </connections>
+            <point key="canvasLocation" x="-314.5" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>
